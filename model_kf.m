@@ -1,7 +1,9 @@
-function [LL,lls,Xt] = logliknn (theta, yt, zt)
+function [LL,lls,Xt] = model_kf(theta, yt, zt)
 
+%num_observations
 n = size(yt,1);
 
+%import parameters
 alpha0 = theta(1);
 alpha1 = theta(2);
 beta1 = theta(3);
@@ -9,10 +11,9 @@ beta2 = theta(4);
 vary = theta(5);
 varx = theta(6);
 
-%initials
+%initialize variables
 Xt0 = mean(yt);
 zt0 = zt(1);
-
 Pt = eye(1,1);
 Xt = zeros(n,1);
 Z = alpha1;
