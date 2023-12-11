@@ -1,3 +1,8 @@
+
+%theta: [double 6x1] is the parameters vector 
+%yt: [double nx1] the observed calcium trace
+%zt: [double nx1] the activation states (i.e. 1's and 0's array, where 1 is active state) -- output of HMM model
+
 function [LL,lls,Xt] = model_kf(theta, yt, zt)
 
 %num_observations
