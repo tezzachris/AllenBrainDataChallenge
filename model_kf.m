@@ -1,5 +1,5 @@
 
-%Inputes
+%Inputs
 
 %theta: [double 6x1] is the parameters vector 
 %yt: [double nx1] the observed calcium trace
