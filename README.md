@@ -11,14 +11,14 @@ C. Tezza christian.tezza@unibo.it, University of Bologna, Department of Statisti
 K. Fokianos fokianos@ucy.ac.cy University of Cyprus, Department of Mathematics & Statistic   
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-Data Research Camp (DRC) 2022 - University of Padova
-https://researchcamp2022.stat.unipd.it/
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-There are two scripts in the R language:
-
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
+Data Research Camp (DRC) 2022 - University of Padova   
+https://researchcamp2022.stat.unipd.it/    
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
+   
+There are two scripts in the R language:   
+DataAnalysis.R
+Model.R
 
 which carry out the data analysis, the HMM model and the binning.
 
