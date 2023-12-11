@@ -17,10 +17,12 @@ https://researchcamp2022.stat.unipd.it/
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
    
 There are two scripts in the R language:   
-DataAnalysis.R
-Model.R
+DataAnalysis.R  
+Model.R  
 
-which carry out the data analysis, the HMM model and the binning.
+which carry out the data analysis, the HMM model with the binning.
+
+The model_kf.m is a MATLAB script for calculating the (prediction error decomposition) likelihood function. This function is optimized in the main.m  file for a given set of paramters (the convergence is fast and reliable for a neuron). 
 
 
 
