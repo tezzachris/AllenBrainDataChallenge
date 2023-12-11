@@ -4,7 +4,7 @@
 
 #Authors
 
-M. Girardi, marco.girardi.6@phd.unipd.it, University of Padua, Department of Statistical Sciences
+M. Girardi, marco.girardi.6@phd.unipd.it, University of Padua, Department of Statistical Sciences \\
 F. Setoudehtanzagi1, f.setoudehtazangi@uq.edu.au , University of Queensland, School of Mathematics & Physics
 F. Spoto federica.spoto@uniroma1.it, Sapienza University of Rome, Department of Statistical Sciences
 C. Tezza christian.tezza@unibo.it, University of Bologna, Department of Statistics
