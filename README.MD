@@ -1,5 +1,4 @@
-
-#Computer Code and Data Set Files Corresponding to:
+###Computer Code and Data Set Files Corresponding to:
 "Time Series Methodology for Analyzing Calcium Imaging Data"
 
 #Authors
