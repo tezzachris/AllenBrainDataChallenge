@@ -2,7 +2,7 @@
 #Computer Code and Data Set Files Corresponding to:
 "Time Series Methodology for Analyzing Calcium Imaging Data"
 
-##Authors
+#Authors
 
 M. Girardi, marco.girardi.6@phd.unipd.it, University of Padua, Department of Statistical Sciences \\
 F. Setoudehtanzagi1, f.setoudehtazangi@uq.edu.au , University of Queensland, School of Mathematics & Physics
