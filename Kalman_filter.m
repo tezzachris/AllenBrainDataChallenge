@@ -1,4 +1,35 @@
 
+
+%!!To use the following script it is necessary to save the function "loglik_kalman" below in a separate file!!
+
+%Import data from the data folder
+
+yt = dfa.calcium;
+yt = yt(2:end);
+zt = dfa.state;
+zt = zt(2:end);
+zt(zt==2) = 0; %non active
+
+%Some initial values for the paramters, ideally should give a grid and iterate
+alpha0 = 0.0059;
+alpha1 = 1;
+beta1 = 0.87;
+beta2 = 0.059;
+vary = 0.001;
+varx = 0.1;
+theta = [alpha0,alpha1,beta1,beta2,vary,varx];
+options = optimoptions('fminunc','Display','none','MaxFunctionEvaluations',5000);
+
+%Perfom the optimization 
+[param] = fminunc( 'loglik_kalman' , theta , options, yt, zt); 
+
+%Obtain the desired output i.e. the filtered calcium series
+[~,~,Xt] = loglik_kalman(param, yt, zt);
+
+
+
+%Function 
+
 %Inputs
 
 %theta: [double 6x1] is the parameters vector 
@@ -11,7 +42,7 @@
 %lls: [double nx1] are the log-likelihoods at each time t
 %Xt: [double nx1] the filtered calcium trace
 
-function [LL,lls,Xt] = model_kf(theta, yt, zt)
+function [LL,lls,Xt] = loglik_kalman(theta, yt, zt)
 
 %num_observations
 n = size(yt,1);
@@ -54,5 +85,5 @@ lls = zeros(n,1);
     end
     LL = sum(lls);
     lls = -lls;
-    LL = -LL;
+    LL = -LL; %Note: we pass the negative value since the optmizer minimizes only
 end
