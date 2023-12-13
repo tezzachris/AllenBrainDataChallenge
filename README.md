@@ -17,12 +17,11 @@ https://researchcamp2022.stat.unipd.it/
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
    
 There are two scripts in the R language:   
-DataAnalysis.R  
-Model.R  
+DataAnalysis.R  -> data analysis and data processing
+Model.R  -> employ the HMM (review DataAnalysis.R before) and the binning of the time series
 
-which carry out the data analysis, the HMM model with the binning.
 
-The model_kf.m is a MATLAB script for calculating the (prediction error decomposition) likelihood function. This function is optimized in the main.m  file for a given set of paramters (the convergence is fast and reliable for a neuron). 
+The "Kalman_filter." is a MATLAB script for obtaning the filtered calcium series for one neuron. The first lines are needed for the optmization (the convergence is fast and reliable for a neuron) and the remaining part contains a function for calculating the (prediction error decomposition) likelihood function. for a given set of paramters 
 
 
 
