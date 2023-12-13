@@ -17,8 +17,8 @@ https://researchcamp2022.stat.unipd.it/
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""    
    
 There are two scripts in the R language:   
-DataAnalysis.R  -> data analysis and data processing
-Model.R  -> employ the HMM (review DataAnalysis.R before) and the binning of the time series
+DataAnalysis.R  -> data analysis and data processing  
+Model.R  -> employ the HMM (review DataAnalysis.R before) and the binning of the time series  
 
 
 The "Kalman_filter." is a MATLAB script for obtaning the filtered calcium series for one neuron. The first lines are needed for the optmization (the convergence is fast and reliable for a neuron) and the remaining part contains a function for calculating the (prediction error decomposition) likelihood function. for a given set of paramters 
