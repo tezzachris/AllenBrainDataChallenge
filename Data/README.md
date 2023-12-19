@@ -1,5 +1,5 @@
-## Data description
-# Source: The Allen Brain Observatory (Allen Institute MindScope Program, 2016)
+### Data description
+* Source: The Allen Brain Observatory (Allen Institute MindScope Program, 2016)
 
 Data description: The neuronal activity in the mouse visual cortex in response to a range of visual stimuli. Here we focus on a single area (primary visual cortex), and on three different depths (200 μm, 275 μm, 375 μm).
 
@@ -29,5 +29,5 @@ Example of inputs for running the Kalman_filter.m optimization routine.
 # References:
 
 DRC Data Overview report (2022). 
-Allen Brain Observatory (2017). Technical whitepaper: stimulus set and response analyses. URL: help.brain-map.org/display/observatory/Documentation.
+Allen Brain Observatory (2017). Technical whitepaper: stimulus set and response analyses. URL: help.brain-map.org/display/observatory/Documentation.  
 Allen Institute MindScope Program (2016). Allen Brain Observatory – 2-photon visual coding [dataset]. brain-map.org/explore/circuits.
