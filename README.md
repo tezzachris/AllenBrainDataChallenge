@@ -18,10 +18,10 @@ https://researchcamp2022.stat.unipd.it/
    
 There are two scripts in the R language:   
 DataAnalysis.R  -> data analysis and data processing  
-Model.R  -> employ the HMM (review DataAnalysis.R before) and the binning of the time series  
+Model.R  -> employ the Hidden Markov Model (HMM) and perfoms the binning of the time series  
 
 
-The "Kalman_filter." is a MATLAB script for obtaning the filtered calcium series for one neuron. The first lines are needed for the optmization (the convergence is fast and reliable for a neuron) and the remaining part contains a function for calculating the (prediction error decomposition) likelihood function. for a given set of paramters 
+The "Kalman_filter.m" is a MATLAB script for obtaning a filtered calcium series given one neuron observed calcium. The filtering relies on a state-space model representation (given in the article) and then performs standard Kalman filtering calculations. It also requires as input the inferred activation states from HMM model. The optimization of the likelihood function is fast and reliable for a neuron. We recommend different starting points for different inputs. 
 
 
 
